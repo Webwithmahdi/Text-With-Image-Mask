@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+.content {
+  margin: auto;
+}
+.area {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  background: url(image.jpg) center/cover no-repeat;
+  transition: all 0.3s ease;
+}
+.area:hover .text-area {
+  opacity: 1;
+}
+.area:hover {
+  background: transparent;
+}
+.text-area {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  opacity: 0;
+}
+p {
+  font-size: 70px;
+  background: url(image.jpg) center/cover no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.3s ease;
+}
